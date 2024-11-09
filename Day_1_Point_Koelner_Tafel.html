@@ -75,15 +75,13 @@
             display: none;
             position: fixed;
             bottom: 20px;
-            left: 20px;
-            width: 50px;
-            height: 50px;
+            right: 20px;
             background-color: rgba(255, 165, 0, 0.9);
             backdrop-filter: blur(10px);
             color: white;
             font-family: Arial, sans-serif;
             padding: 10px;
-            border-radius: 50%;
+            border-radius: 10px;
             box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
             z-index: 1000;
             text-align: center;
@@ -146,7 +144,7 @@
         }
         .control-panel button:hover {
             background-color: #248a7d;
-            transform: translateY(-2px);
+            transform: translateY(-2px;
         }
         .control-panel button.location-btn {
             background-color: #e76f51;
@@ -230,12 +228,11 @@
         </p>
     </div>
     <div class="mini-info-box" id="mini-info-box" onclick="showInfoBox()">
-        <i class="fa fa-info"></i>
+        <i class="fa fa-info"></i> Info
     </div>
 
     <script>
         // Initialize the map
-// Initialize the map
         var map = L.map('map', {
             zoomControl: false
         }).setView([50.9375, 6.9603], 12);
@@ -268,7 +265,7 @@
             iconColor: 'white'
         });
 
-        // Hardcode the location data
+   // Hardcode the location data
          var locations = [
             { stadtteil: "Altstadt Nord", name: "Lebensmittelausgabe Lyskirchen", address: "An Lyskirchen 10, 50676 Köln", openingHours: "Donnerstags, 16:00 - 17:30 Uhr", registrationInfo: "Bestandskunden: 15:00 Uhr; Neuregistrierungen: 14:00 - 14:30 Uhr in der Kirche", coords: [50.9325, 6.9603] },
             { stadtteil: "Altstadt-Süd", name: "Lebensmittelausgabe Lyskirchen", address: "An Lyskirchen 10, 50676 Köln", openingHours: "Donnerstags, 16:00 - 17:30 Uhr", registrationInfo: "Bestandskunden: 15:00 Uhr; Neuregistrierungen: 14:00 - 14:30 Uhr in der Kirche", coords: [50.9325, 6.9603] },
@@ -307,6 +304,7 @@
             { stadtteil: "Zündorf", name: "Lebensmittelausgabe Lukaskirche", address: "Mühlenstr. 2-6, 51143 Köln", openingHours: "Freitags ab 14.00 Uhr", registrationInfo: "Aus Kapazitätsgründen momentan keine Neuaufnahme möglich.", coords: [50.8770, 7.0440] },
             { stadtteil: "Zollstock", name: "Lebensmittelausgabe in der Philippusgemeinde", address: "Albert-Schweitzer-Str. 3-5, 50968 Köln", openingHours: "Donnerstags von 14.30 Uhr – 15.30 Uhr", registrationInfo: "Donnerstags um 14.15 Uhr. Die Kölnpässe aller Haushaltsmitglieder werden benötigt.", coords: [50.9140, 6.9390] }
         ];
+
 
 
         // Add markers
